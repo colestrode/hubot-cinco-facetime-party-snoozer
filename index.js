@@ -20,7 +20,7 @@ module.exports = function(robot) {
 
     if (rooms.has(room)) {
       rooms.remove(room);
-      msg.send('Cinco Facetime Party Snoozer is powered off! You\'ll have to make your own conversation now');
+      msg.send('Cinco Facetime Party Snoozer is powered off! You\'ll have to make your own conversation now.');
     } else {
       rooms.add(room);
       msg.send('Cinco Facetime Party Snoozer is on! Now get to talking about whatever boring thing you want!');
