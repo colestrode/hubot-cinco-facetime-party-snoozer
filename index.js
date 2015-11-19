@@ -12,7 +12,7 @@ module.exports = function(robot) {
     msg.send(snoozer.toggleRoom(room));
   });
 
-  robot.respond(/.*/i, function(msg) {
+  robot.respond(/^.*/i, function(msg) {
     var room = msg.message.room
       , response = snoozer.respondMaybe(room);
 
