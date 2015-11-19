@@ -8,7 +8,8 @@ module.exports = function(robot) {
 
   robot.respond(/cinco (facetime)? (party)? snoozer/i, function(msg) {
     var room = msg.message.room;
-    snoozer.toggleRoom(room);
+
+    msg.send(snoozer.toggleRoom(room));
   });
 
   robot.respond(/.*/i, function(msg) {
