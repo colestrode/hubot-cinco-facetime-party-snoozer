@@ -11,7 +11,9 @@ module.exports = function(robot) {
     rooms.init(robot.brain.snoozer);
   });
 
-  robot.respond(/cinco help/, helptext);
+  robot.respond(/cinco help/, function(msg) {
+    msg.send(helpext)
+  });
 
   robot.respond(/cinco (facetime )?(party )?snoozer/i, function(msg) {
     var room = msg.message.room;
@@ -54,7 +56,7 @@ module.exports = function(robot) {
 
   robot.respond(/cinco quietest/i, function(msg) {
     var room = msg.message.room;
-    volume.quieter(room);
+    volume.quietest(room);
     msg.send('Volume set to ' + volume.value(room));
   });
 
