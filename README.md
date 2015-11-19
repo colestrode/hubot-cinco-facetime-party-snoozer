@@ -1,7 +1,7 @@
-# Hubot-cinco-facetime-party-snoozer
+# Hubot Cinco Facetime Party Snoozer
 Thanks for coming!
 
-Tired of talking and having no one respond to you? Let Hubot be your friend! Now with Hubot-cinco-facetime-party-snoozer 
+Tired of talking and having no one respond to you? Let Hubot be your friend! Now with Hubot Cinco Facetime Party Snoozer 
 Hubot will converse with you like a normal human with 5 professional responses!
 
 ## What?
