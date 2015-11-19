@@ -4,7 +4,7 @@
   "description": "Now you can sleep right through parties and social gatherings without anyone noticing.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "snoozer"
   ],
   "author": "Cole Furfaro-Strode",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/colestrode/hubot-cinco-facetime-party-snoozer/issues"
   },
