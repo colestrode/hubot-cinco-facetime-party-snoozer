@@ -12,7 +12,7 @@ module.exports = function(robot) {
   });
 
   robot.respond(/cinco help/, function(msg) {
-    msg.send(helpext)
+    msg.send(helptext);
   });
 
   robot.respond(/cinco (facetime )?(party )?snoozer/i, function(msg) {
