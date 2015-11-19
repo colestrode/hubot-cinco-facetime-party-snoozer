@@ -6,9 +6,7 @@ var _ = require('lodash')
 
 module.exports = function(robot) {
   robot.brain.on('loaded', function() {
-    robot.brain.snoozer = robot.brain.snoozer || {};
-    volume.init(robot.brain.snoozer);
-    rooms.init(robot.brain.snoozer);
+    init(robot.brain.snoozer);
   });
 
   robot.respond(/cinco help/, function(msg) {
@@ -23,6 +21,7 @@ module.exports = function(robot) {
       msg.send('Cinco Facetime Party Snoozer is powered off! You\'ll have to make your own conversation now.');
     } else {
       rooms.add(room);
+      volume.setToDefault(room);
       msg.send('Cinco Facetime Party Snoozer is on! Now get to talking about whatever boring thing you want!');
     }
   });
@@ -60,6 +59,11 @@ module.exports = function(robot) {
     msg.send('Volume set to ' + volume.value(room));
   });
 
+  robot.respond(/cinco reset/i, function(msg) {
+    init();
+    msg.send('Cinco Facetime Party Snoozer has been reset for all channels.');
+  });
+
   // the magic
   robot.hear(/.*/i, function(msg) {
     var room = msg.message.room
@@ -73,4 +77,11 @@ module.exports = function(robot) {
   robot.respond(/cinco debug/i, function(msg) {
     msg.send(JSON.stringify(robot.brain.snoozer, null, 2));
   });
+
+  function init(initialVal) {
+    robot.brain.snoozer = initialVal || {};
+    volume.init(robot.brain.snoozer);
+    rooms.init(robot.brain.snoozer);
+
+  }
 };

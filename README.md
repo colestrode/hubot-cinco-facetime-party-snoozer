@@ -24,4 +24,5 @@ https://www.youtube.com/watch?v=kg2UlYDswSc
 * `cinco quieter`: Make Hubot respond less often.
 * `cinco loudest`: Makes Hubot respond all the time.
 * `cinco quietest`: Makes Hubot respond not very often at all.
+* `cinco reset`: Turns Cinco Facetime Party Snoozer off for all channels.
 * `cinco help`: Prints out these commands for you
