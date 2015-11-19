@@ -19,4 +19,8 @@ module.exports = function(robot) {
       msg.send(response);
     }
   });
+
+  robot.respond(/cinco debug/i, function(msg) {
+    msg.send(snoozer.debug());
+  });
 };
