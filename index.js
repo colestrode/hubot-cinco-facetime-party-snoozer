@@ -68,6 +68,6 @@ module.exports = function(robot) {
   });
 
   robot.respond(/cinco debug/i, function(msg) {
-    msg.send(JSON.stringify(robot.brain.snooze, null, 2));
+    msg.send(JSON.stringify(robot.brain.snoozer, null, 2));
   });
 };
