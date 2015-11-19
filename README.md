@@ -22,6 +22,6 @@ https://www.youtube.com/watch?v=kg2UlYDswSc
 * `cinco status`: Whether Cinco Facetime Party Snoozer is on in this channel.
 * `cinco louder`: Makes Hubot respond more often.
 * `cinco quieter`: Make Hubot respond less often.
-* `cinco loudest`: Makes Hubot respond as much as possible.
+* `cinco loudest`: Makes Hubot respond all the time.
 * `cinco quietest`: Makes Hubot respond not very often at all.
 * `cinco help`: Prints out these commands for you
