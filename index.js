@@ -37,25 +37,25 @@ module.exports = function(robot) {
   robot.respond(/cinco louder/i, function(msg) {
     var room = msg.message.room;
     volume.louder(room);
-    msg.respond('Volume set to ' + volume.value(room));
+    msg.send('Volume set to ' + volume.value(room));
   });
 
   robot.respond(/cinco loudest/i, function(msg) {
     var room = msg.message.room;
     volume.loudest(room);
-    msg.respond('Volume set to ' + volume.value(room));
+    msg.send('Volume set to ' + volume.value(room));
   });
 
   robot.respond(/cinco quieter/i, function(msg) {
     var room = msg.message.room;
     volume.quieter(room);
-    msg.respond('Volume set to ' + volume.value(room));
+    msg.send('Volume set to ' + volume.value(room));
   });
 
   robot.respond(/cinco quietest/i, function(msg) {
     var room = msg.message.room;
     volume.quieter(room);
-    msg.respond('Volume set to ' + volume.value(room));
+    msg.send('Volume set to ' + volume.value(room));
   });
 
   // the magic
