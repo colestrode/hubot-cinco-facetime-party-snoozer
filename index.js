@@ -62,9 +62,10 @@ module.exports = function(robot) {
 
   // the magic
   robot.hear(/.*/i, function(msg) {
-    var room = msg.message.room;
+    var room = msg.message.room
+      , loudEnough = _.random(volume.min, volume.max) <= volume.value(room);
 
-    if (rooms.has(room) && _.random(volume.min, volume.max) <= volume.value()) {
+    if (rooms.has(room) && loudEnough) {
       msg.send(responses.random());
     }
   });
