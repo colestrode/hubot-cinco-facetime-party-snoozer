@@ -1,6 +1,6 @@
 {
   "name": "hubot-cinco-facetime-party-snoozer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tired of chatting and having no one respond to you? Have Hubot talk to you!",
   "main": "index.js",
   "scripts": {
