@@ -1,7 +1,7 @@
 {
   "name": "hubot-cinco-facetime-party-snoozer",
   "version": "1.0.0",
-  "description": "Now you can sleep right through parties and social gatherings without anyone noticing.",
+  "description": "Tired of chatting and having no one respond to you? Have Hubot talk to you!",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"

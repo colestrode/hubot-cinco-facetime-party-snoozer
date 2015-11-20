@@ -9,7 +9,8 @@ Hubot Cinco Facetime Party Snoozer will let Hubot participate in the conversatio
 
 Turn it on for a channel by typing `Hubot cinco facetime party snoozer`. Turn it off by typing the same thing! It's that simple!
 
-Choose your channels wisely.
+You can change how often Hubot responds by adjusting the volume. Volume controls are exponential, so any time you turn 
+the volume up Hubot will respond twice as often. Turn the volume down and Hubot will respond half as often.
 
 ## Why?
 This seemed like a good idea at the time.
