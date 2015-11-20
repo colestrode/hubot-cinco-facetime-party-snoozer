@@ -1,6 +1,6 @@
 {
   "name": "hubot-cinco-facetime-party-snoozer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Now you can sleep right through parties and social gatherings without anyone noticing.",
   "main": "index.js",
   "scripts": {
