@@ -67,7 +67,7 @@ module.exports = function(robot) {
   // the magic
   robot.hear(/.*/i, function(msg) {
     var room = msg.message.room
-      , loudEnough = _.random(volume.min, volume.max) <= volume.value(room);
+      , loudEnough = _.random(pow(volume.min), pow(volume.max)) <= pow(volume.value(room));
 
     if (rooms.has(room) && loudEnough) {
       msg.send(responses.random());
@@ -82,5 +82,9 @@ module.exports = function(robot) {
     robot.brain.snoozer = initialVal || {};
     volume.init(robot.brain.snoozer);
     rooms.init(robot.brain.snoozer);
+  }
+
+  function pow(exp) {
+    return Math.pow(2, exp);
   }
 };
