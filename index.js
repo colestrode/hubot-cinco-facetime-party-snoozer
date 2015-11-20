@@ -22,7 +22,7 @@ module.exports = function(robot) {
     } else {
       rooms.add(room);
       volume.setToDefault(room);
-      msg.send('Cinco Facetime Party Snoozer is on! Now get to talking about whatever boring thing you want!');
+      msg.send('Cinco Facetime Party Snoozer is on! Now you can talk about whatever boring thing you want!');
     }
   });
 
@@ -82,6 +82,5 @@ module.exports = function(robot) {
     robot.brain.snoozer = initialVal || {};
     volume.init(robot.brain.snoozer);
     rooms.init(robot.brain.snoozer);
-
   }
 };
